@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Salud - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🌱 VitalSalud</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="componentes/nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="componentes/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="componentes/galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="componentes/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.doctorweb.agency/assets/img/blog/directorio-de-doctores.jpg"  class="d-block w-100 carousel-img" alt="Clínica Moderna">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Atención Médica Avanzada</h5>
+                    <p>Cuidamos de ti y de tu familia con tecnología de punta.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80" class="d-block w-100 carousel-img" alt="Equipo Médico">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Especialistas Calificados</h5>
+                    <p>Un equipo de profesionales comprometidos con tu bienestar.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80" class="d-block w-100 carousel-img" alt="Bienestar Integral">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Prevención y Bienestar</h5>
+                    <p>Tu salud preventiva es nuestra mayor prioridad.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <main class="container my-5">
+        
+        <section class="text-center py-4">
+            <h1 class="display-4 fw-bold text-success">Bienvenidos a VitalSalud</h1>
+            <p class="lead text-muted">Comprometidos con ofrecer servicios médicos de excelencia, calidez humana e innovación constante.</p>
+            <div class="mt-4">
+                <button type="button" class="btn btn-danger btn-lg shadow-sm" data-bs-toggle="modal" data-bs-target="#emergencyModal">
+                    🚨 Línea de Emergencia 24/7
+                </button>
+            </div>
+        </section>
+
+        <section class="row g-4 my-5 text-center">
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm h-100 card-hover bg-light">
+                    <div class="text-success display-5 mb-3"><i class="bi bi-heart-pulse-fill"></i></div>
+                    <h4 class="fw-bold">Cuidado Integral</h4>
+                    <p class="text-muted mb-0">Atención médica enfocada en la prevención, el diagnóstico oportuno y el seguimiento constante.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm h-100 card-hover bg-light">
+                    <div class="text-success display-5 mb-3"><i class="bi bi-shield-plus"></i></div>
+                    <h4 class="fw-bold">Seguridad Garantizada</h4>
+                    <p class="text-muted mb-0">Contamos con protocolos estrictos de bioseguridad y tecnología médica certificada.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm h-100 card-hover bg-light">
+                    <div class="text-success display-5 mb-3"><i class="bi bi-telephone-inbound-fill"></i></div>
+                    <h4 class="fw-bold">Soporte Inmediato</h4>
+                    <p class="text-muted mb-0">Canales de comunicación abiertos y atención de urgencias prioritaria en todo momento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row g-4 my-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-success">
+                    <div class="card-header bg-success text-white fw-bold py-3">
+                        <i class="bi bi-clock-history me-2"></i> Horarios de Atención
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                                <strong>Lunes a Viernes:</strong>
+                                <span class="text-muted">07:00 - 21:00</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                                <strong>Sábados:</strong>
+                                <span class="text-muted">08:00 - 16:00</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                                <strong>Domingos:</strong>
+                                <span class="text-muted">Solo Emergencias</span>
+                            </li>
+                            <li class="text-center text-danger fw-bold mt-2">
+                                <i class="bi bi-exclamation-triangle-fill"></i> Urgencias: 24 Horas / 365 Días
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-dark text-white fw-bold py-3">
+                        <i class="bi bi-geo-alt-fill text-success me-2"></i> Nuestra Ubicación Central
+                    </div>
+                    <div class="card-body p-0" style="min-height: 250px;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d-68.15!3d-16.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDMwJzAwLjAiUyA2OMKwMDknMDAuMCJX!5e0!3m2!1ses!2s!4v1700000000000!5m2!1ses!2s" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; min-height: 280px; display: block;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal fade" id="emergencyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Contacto de Emergencia Inmediata</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <p class="fs-5">Si presentas una emergencia médica, comunícate inmediatamente a nuestra línea prioritaria:</p>
+                    <h3 class="text-danger fw-bold">📞 0800-999-SALUD</h3>
+                    <p class="text-muted small mt-2">Atención médica domiciliaria y ambulancias las 24 horas del día.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2026 VitalSalud. Todos los derechos reservados. Tu bienestar es nuestra misión.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
